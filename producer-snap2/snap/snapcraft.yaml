@@ -1,0 +1,24 @@
+name: producer-snap2
+version: '0.1'
+summary: Produces content snap files \#2
+description: This produces other snaps files t be consumed by the consumer
+grade: stable
+confinement: strict
+
+slots:
+  content:
+    interface: content
+    content: config    
+    source:
+      read: 
+        - $SNAP/config2
+
+apps:
+  producer-snap2:
+    command: bash
+parts:
+  config:
+    plugin: dump
+    source: .
+    stage:
+      - config/*

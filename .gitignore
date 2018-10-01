@@ -1,0 +1,17 @@
+*.snap
+*.bz2
+
+consumer-snap/parts/*
+consumer-snap/prime/*
+consumer-snap/stage/*
+consumer-snap/snap/.snapcraft
+
+producer-snap1/parts/*
+producer-snap1/prime/*
+producer-snap1/stage/*
+producer-snap1/snap/.snapcraft
+
+producer-snap2/parts/*
+producer-snap2/prime/*
+producer-snap2/stage/*
+producer-snap2/snap/.snapcraft
