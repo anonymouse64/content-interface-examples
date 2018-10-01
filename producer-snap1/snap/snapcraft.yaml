@@ -9,9 +9,8 @@ slots:
   content:
     interface: content
     content: config    
-    source:
-      read:
-        - $SNAP/config1
+    read:
+      - $SNAP/config1
 
 apps:
   producer-snap1:
