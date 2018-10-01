@@ -9,7 +9,7 @@ plugs:
   content:
     interface: content
     content: config
-    target: $SNAP/config
+    target: $SNAP
 
 apps:
   consumer-snap:

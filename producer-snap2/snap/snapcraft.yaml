@@ -9,8 +9,9 @@ slots:
   content:
     interface: content
     content: config    
-    read: 
-      - $SNAP/config2
+    source:
+      read: 
+        - $SNAP/config2
 
 apps:
   producer-snap2:
@@ -20,4 +21,4 @@ parts:
     plugin: dump
     source: .
     stage:
-      - config/*
+      - config2/*
